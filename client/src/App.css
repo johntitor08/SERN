@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 80px);
+}
+
+.page h1 {
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.page p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.nav-link:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
