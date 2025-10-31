@@ -129,7 +129,9 @@ CREATE TRIGGER update_users_updated_at
     EXECUTE FUNCTION update_updated_at_column();
 
 
-📁 Project Structure:
+```
+
+## 📁 Project Structure
 
 project-root/
 ├── backend/
@@ -166,8 +168,7 @@ project-root/
 └── README.md
 └── .gitignore
 
-
-🎯 API Endpoints:
+## 🎯 API Endpoints
 
 Authentication Routes
 Method Endpoint Description Body
@@ -179,23 +180,21 @@ GET /api/users/getAll Get all users No
 GET /api/users/:id Get user by ID No
 PUT /api/users/:id Update user No
 
-
-Example API Usage:
+### Example API Usage
 
 User Registration:
 
-curl -X POST http://localhost:5000/api/users/signup \
+curl -X POST <http://localhost:5000/api/users/signup> \
   -H "Content-Type: application/json" \
-  -d '{"name":"John Doe","email":"john@example.com","password":"password123"}'
+  -d '{"name":"John Doe","email":"<john@example.com>","password":"password123"}'
 
 User Login:
 
-curl -X POST http://localhost:5000/api/users/signin \
+curl -X POST <http://localhost:5000/api/users/signin> \
   -H "Content-Type: application/json" \
-  -d '{"email":"john@example.com","password":"password123"}'
+  -d '{"email":"<john@example.com>","password":"password123"}'
 
-
-🏃‍♂️ Running the Application:
+### 🏃‍♂️ Running the Application
 
 Development Mode:
 
@@ -209,16 +208,14 @@ Frontend:
 cd client
 npm start
 
-
-Production Build:
+### Production Build:
 
 Frontend:
 
 cd client
 npm run build
 
-
-⚙️ Environment Variables:
+### ⚙️ Environment Variables
 
 Backend (.env):
 
@@ -228,10 +225,9 @@ PORT=5000
 
 Frontend (.env):
 
-REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_API_URL=<http://localhost:5000/api>
 
-
-🔒 Authentication Flow:
+### 🔒 Authentication Flow
 
 Registration: User signs up with email and password
 
@@ -241,8 +237,7 @@ Protected Routes: Authenticated users can access profile and dashboard
 
 Logout: Clears local storage and redirects to home
 
-
-🎨 Customization
+### 🎨 Customization
 
 Styling:
 
@@ -252,7 +247,6 @@ Update color scheme in CSS variables
 
 Add new components in src/components/
 
-
 Database:
 
 Add new tables in Supabase SQL editor
@@ -261,8 +255,7 @@ Update user model for additional fields
 
 Modify API endpoints in router/userRouter.js
 
-
-🐛 Troubleshooting
+### 🐛 Troubleshooting
 
 Common Issues:
 
@@ -284,15 +277,13 @@ Clear browser local storage
 
 Check if user exists in Supabase database
 
-
-Debug Mode:
+### Debug Mode
 
 Enable debug logging by adding to your backend .env:
 
 DEBUG=true
 
-
-🤝 Contributing
+### 🤝 Contributing
 
 Fork the repository
 
@@ -304,8 +295,7 @@ Push to the branch (git push origin feature/amazing-feature)
 
 Open a Pull Request
 
-
-🙏 Acknowledgments
+### 🙏 Acknowledgments
 
 React for the frontend framework
 
@@ -315,8 +305,7 @@ Express.js for the server framework
 
 bcryptjs for password hashing
 
-
-📞 Support
+### 📞 Support
 
 If you have any questions or run into issues, please:
 
